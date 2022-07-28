@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right bottom, #0500ff, #00ffdd) center;
+    max-width: 720px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 8rem;
+
+}
+
+header h1{
+    font-weight: 15rem;
+}
+
+.description{
+    margin: 0 0 1rem 0;
+}
+
+input{
+    cursor: pointer;
+    display: block;
+    outline: none;
+    border: 3px solid #0500ff;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background: #00ffdd;
+    color: #0500ff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    cursor: pointer;
+    display: block;
+    outline: none;
+    border: 3px solid #0500ff;
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    border-radius: 1rem;
+    background: #00ffdd;
+    color: #0500ff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 6rem;
+}
+
+#btn{
+    cursor: pointer;
+    border: 3px solid #0500ff;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background: #0500ff;
+    color: #00ffdd;
+    font-weight: bold;
+}
+
+#screen{
+    height: 21rem;
+    width: 100%;
+    background: url("bg.jpg") no-repeat center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(20px, 150px);
+    grid-template-areas: 
+    "head head"
+    "airtime withdraw"
+    "report transfer"
+    ;
+}
+
+#head{
+    grid-area: head;
+    background: rgba(255, 255, 255, 0.589);
+    opacity: 1;
+    line-height: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#withdraw{
+    grid-area: withdraw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#transfer{
+    grid-area: transfer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#airtime{
+    grid-area: airtime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#report{
+    grid-area: report;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen button,
+#end button{
+    padding: 0.2rem;
+    width: 7rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 2px solid #0500ff;
+    color: #0500ff;
+    cursor: pointer;
+}
+
+#warn{
+    margin-bottom: 0.5rem;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+#mssg{
+    position: relative;
+}
+
+#mssg h3{
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    color: rgb(5, 51, 9);
+}
+
+::placeholder{
+    color: #0500ff;
+}
+
+#banks{
+    cursor: pointer;
+    display: block;
+    outline: none;
+    border: 3px solid #0500ff;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background: #00ffdd;
+    color: #0500ff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
